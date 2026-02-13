@@ -1,7 +1,8 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    min-height: 100vh;
     padding: 20px;
 }
 
@@ -19,7 +20,7 @@ body {
     border-radius: 15px;
     padding: 40px;
     max-width: 375px;
-    width: 100vh;
+    width: 100%;
     text-align: center;
 }
 
@@ -75,17 +76,32 @@ h1 {
     color: #333333;
 }
 
-
 @media (min-width: 768px){
-    .container {
         .container{
-            max-width: 1440px;
+            max-width: 456px;
+            padding: 48px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .location {
+            font-size: 15px;
+        }
+
+        .bio {
+            font-size: 15px;
+        }
+
+        .social-links a { 
+            padding: 14px;
+            font-size: 15px;
         }
     }
-}
 
-@media (max-width: 1440px){
-    .container {
+@media (min-width: 1440px){
+    body{
         padding: 40px;
     }
 }
